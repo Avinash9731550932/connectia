@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+}
+#jordan-logo {
+  fill: white;
+  position: absolute;
+  left: 465px;
+}
+h3 {
+	font-family: 'Ibarra Real Nova', serif;
+	font-weight: 500;
+}
+h1 {
+	font-family: 'Neuton', serif;
+}
+.title-path {
+  visibility: hidden;
+}
+svg {
+  width: 500px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+.subContainer,
+.cardContainer {
+  width: 1000px;
+  min-width: 1000px;
+  height: 600px;
+  min-height: 600px;
+}
+.subContainer {
+  margin: 25px 0px;
+  margin-left: 60px;
+  background: transparent;
+}
+h1.title {
+    height: auto;
+    margin-top: 110px;
+}
+.svgContainer {
+	display: flex;
+    text-align: center;
+    background: transparent;
+    z-index: 999;
+    position: relative;
+}
+.placeholder {
+  flex: 1;
+}
+.svgButtons {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+}
+.cardContainer {
+  display: flex;
+  text-align: center;
+  position: fixed;
+  background: transparent;
+  z-index: 99;
+}
+.imageCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.textContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  flex: 2;
+  padding-left: 80px;
+}
+.card {
+  width: 320px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0 70px 63px -60px #000000;
+  visibility: hidden;
+  background: #7474746b;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 100%;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  color: white;
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 685px;
+  z-index: 20;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(225, 225, 225, 0.3);
+  border: 4px solid #b31419;
+}
+.btn:active, .btn:focus {
+  outline: none;
+}
+.topButton {
+	left: 650px;
+    top: 30px;
+}
+.bottomButton {
+	left: 720px;
+    top: 30px;
+}
+.right,
+.left {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+    top: -10px;
+}
+.factHolder {
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 20px;
+  width: 100%;
+}
+.factbox {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  width: 80%;
+  height: 50%;
+  margin: 0px;
+  font-family: "Secular One", "Roboto", sans-serif;
+  font-weight: 700;
+}
+.text {
+  color: white;
+  height: 100%;
+}
+.text * {
+  height: 25%;
+}
+.text h3 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-align: justify;
+  width: 600px;
+  height: auto;
+}
+.CartMainBtn {
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+.leftContainer {
+  animation: move1 5s linear 0s infinite alternate;
+}
+.rightContainer {
+  animation: move2 5s linear 0s infinite alternate;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(5px, 2px);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, -2px);
+  }
+  100% {
+    transform: translate(-5px, 0);
+  }
+}
+
+.dots {
+  position: absolute;
+  left: 40px;
+  height: 380px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 20;
+}
+.dots button.active {
+    border: 4px solid #b31419;
+}
+.dots button:hover {
+    border: 4px solid #b31419;
+}
+button.add-to-cart {
+	height: 40px;
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+button.add-to-cart .cart {
+    height: auto !important;
+}
+.cart svg {
+    width: 23px;
+    margin-right: 8px;
+}
+button.add-to-cart:hover {
+    border: 3px solid #b31419;
+}
+.jordan-logo-small-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  border: 1px solid white;
+  z-index: 20;
+}
+.jordan-logo-small-holder:hover {
+  cursor: pointer;
+  background-color: rgba(225, 225, 225, 0.3);
+}
+.jordan-logo-small-holder:active, .jordan-logo-small-holder:focus {
+  outline: none;
+}
+.jordan-logo-small {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+.active {
+  border: 3px solid white;
+  background-color: rgba(225, 225, 225, 0.3);
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  cursor: pointer;
+}
